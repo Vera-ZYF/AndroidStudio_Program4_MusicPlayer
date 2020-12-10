@@ -11,8 +11,5 @@
         android:title="在线音乐"
         app:theme="@style/Theme.AppCompat.Light"
         app:showAsAction="always" />
-    <item
-        android:id="@+id/help"
-        android:title="帮助"
-        app:showAsAction="never" />
+
 </menu>

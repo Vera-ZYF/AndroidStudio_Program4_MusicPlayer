@@ -8,8 +8,6 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 import android.provider.MediaStore;
 import android.util.Log;
-
-import com.bear.musicplayer.MainActivity;
 import com.bear.musicplayer.R;
 import com.bear.musicplayer.data.Music;
 import com.bear.musicplayer.data.SongList;
@@ -67,7 +65,7 @@ public class GetMusicInfo {
                 music.setFileName(fileName);
                 music.setFileSize(fileSize);
                 music.setDownload(1);
-                music.setLove(0);
+                //music.setLove(0);
                 musicList.add(music);
             }
         }
@@ -107,7 +105,7 @@ public class GetMusicInfo {
             }
             SongList songList = new SongList();
             songList.setSongListId("1");
-            songList.setImageId(localMusic.get(0).getAlbumId());
+            //songList.setImageId(localMusic.get(0).getAlbumId());
 //            songList.setInfo("共"+localMusic.size()+"首音乐");
             songList.setName("本地音乐");
             songList.save();
@@ -122,9 +120,9 @@ public class GetMusicInfo {
             loveList.save();
         }
         for (Music music : localMusic) {
-            if (music.getLove() == 1) {
-                loveMusic.add(music);
-            }
+//            if (music.getLove() == 1) {
+//                loveMusic.add(music);
+//            }
         }
         Log.d(TAG, "getLocalMusic: " + loveMusic.size());
     }

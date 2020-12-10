@@ -29,11 +29,8 @@ public class MyMusicFragment extends Fragment {
 
     private Context context = getActivity();
     private RecyclerView songListView;  // 歌单列表
-
     public static List<SongList> songLists = new ArrayList<>();
-
     public static SongListAdapter songListAdapter;
-
     private static final String TAG = "MyMusicFragment";
 
     @Nullable
@@ -61,9 +58,9 @@ public class MyMusicFragment extends Fragment {
         songLists.clear();
         localMusic = LitePal.findAll(Music.class);
         for (Music music : localMusic) {
-            if (music.getLove() == 1) {
-                loveMusic.add(music);
-            }
+//            if (music.getLove() == 1) {
+//                loveMusic.add(music);
+//            }
         }
         songLists = LitePal.findAll(SongList.class);
         if (loveMusic.size() != 0) {

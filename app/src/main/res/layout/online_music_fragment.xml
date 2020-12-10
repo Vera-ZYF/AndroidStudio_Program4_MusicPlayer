@@ -9,4 +9,14 @@
         android:layout_height="wrap_content"
         android:text="在线音乐" />
 
+    <!--    <ListView-->
+    <!--        android:id="@+id/lv_like"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"/>-->
+
+    <WebView
+        android:id="@+id/online_music_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>

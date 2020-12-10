@@ -24,7 +24,6 @@ public class Music extends LitePalSupport {
 
     private int download;       // 是否下载
 
-    private int love;           // 是否喜欢
 
     public long getId() {
         return id;
@@ -106,11 +105,4 @@ public class Music extends LitePalSupport {
         this.download = download;
     }
 
-    public int getLove() {
-        return love;
-    }
-
-    public void setLove(int love) {
-        this.love = love;
-    }
 }

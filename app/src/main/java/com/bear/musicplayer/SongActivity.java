@@ -39,7 +39,7 @@ public class SongActivity extends AppCompatActivity implements View.OnClickListe
 
     private ImageView albumCover;       // 专辑封面
 
-    private Button loveButton;     // 喜欢
+    //private Button loveButton;     // 喜欢
 
     private TextView currentTime, totalTime;    // 当前播放时长和总时长
 
@@ -89,7 +89,7 @@ public class SongActivity extends AppCompatActivity implements View.OnClickListe
         songName = findViewById(R.id.song_name);
         albumCover = findViewById(R.id.album_cover);
         playMode = findViewById(R.id.play_order);
-        loveButton = findViewById(R.id.love);
+        //loveButton = findViewById(R.id.love);
         format = new SimpleDateFormat("mm:ss");
     }
 
@@ -99,7 +99,7 @@ public class SongActivity extends AppCompatActivity implements View.OnClickListe
         nextSong.setOnClickListener(this);
         preSong.setOnClickListener(this);
         playMode.setOnClickListener(this);
-        loveButton.setOnClickListener(this);
+        //loveButton.setOnClickListener(this);
     }
 
     // 初始化MediaPlayer
@@ -165,19 +165,6 @@ public class SongActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
 
-            case R.id.love:
-                Log.d(TAG, "onClick: " + "clicked");
-                Toast.makeText(getContext(), "移除成功", Toast.LENGTH_LONG).show();
-                if (music.getLove() == 0) {
-//                    loveButton.setImageResource(R.drawable.love);
-                    music.setLove(1);
-                } else {
-//                    loveButton.setImageResource(R.drawable.unlove);
-                    music.setLove(0);
-                }
-                currentMusicList.get(currentMusicPostion).setLove(music.getLove());
-                music.save();
-                break;
             default:
         }
     }

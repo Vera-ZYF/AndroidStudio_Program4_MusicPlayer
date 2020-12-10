@@ -22,7 +22,6 @@ import androidx.recyclerview.widget.RecyclerView;
 public class MusicItemAdapter extends RecyclerView.Adapter<MusicItemAdapter.ViewHolder> {
 
     public static List<Music> musicList = new ArrayList<>();
-
     public static Context mContext;
 
     static class ViewHolder extends RecyclerView.ViewHolder {

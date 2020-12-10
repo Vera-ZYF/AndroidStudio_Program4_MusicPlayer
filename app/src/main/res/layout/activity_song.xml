@@ -42,12 +42,12 @@
         android:layout_width="match_parent"
         android:layout_height="316dp" />
 
-    <Button
-        android:id="@+id/love"
-        android:layout_width="wrap_content"
-        android:layout_height="61dp"
-        android:layout_marginLeft="20dp"
-        android:text="移除" />
+    <!--    <Button-->
+    <!--        android:id="@+id/love"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="61dp"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:text="移除" />-->
     <!--        <ImageButton-->
     <!--            android:id="@+id/love"-->
     <!--            android:layout_width="40dp"-->
